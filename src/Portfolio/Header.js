@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import Sidebar from "./Sidebar";
 import { animateScroll as scroll, Link } from "react-scroll";
 
-const Header = ({ clr, good, textColor }) => {
+const Header = ({ clr, good, textColor, iconColor }) => {
   return (
     <Container
       style={{
@@ -41,29 +41,20 @@ const Header = ({ clr, good, textColor }) => {
         <Link
           offset={-80}
           activeClass="active"
-          to="Service"
+          to="Services"
           smooth={true}
           duration={1000}
         >
-          <span>Service</span>
+          <span>Services</span>
         </Link>
         <Link
           offset={-80}
           activeClass="active"
-          to="Portfolio"
+          to="Projects"
           smooth={true}
           duration={1000}
         >
-          <span>Portfolio</span>
-        </Link>
-        <Link
-          offset={-80}
-          activeClass="active"
-          to="Resume"
-          smooth={true}
-          duration={1000}
-        >
-          <span>Resume</span>
+          <span>Projects</span>
         </Link>
         <Link
           offset={-80}
@@ -75,7 +66,7 @@ const Header = ({ clr, good, textColor }) => {
           <span>Contact</span>
         </Link>
       </Wrapper>
-      <Holder>
+      <Holder style={{ color: iconColor }}>
         <Menu
           onClick={() => {
             document.getElementById("nav").style.width = "200px";
@@ -98,11 +89,13 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  transition: all 1000ms;
+  z-index: 1;
 `;
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -125,8 +118,10 @@ const Wrapper = styled.div`
 
 const Logo = styled.div`
   width: 100px;
-  color: #96bb7c;
+  color: rgba(54, 193, 87, 0.7);
   object-fit: contain;
+  font-size: 30px;
+  font-weight: bold;
   margin: 0 50px;
 `;
 

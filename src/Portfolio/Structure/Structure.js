@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import Header from "../Header";
 
 const Structure = () => {
@@ -17,6 +17,7 @@ const Structure = () => {
         clr={change ? "white" : ""}
         textColor={change ? "black" : "white"}
         good={change ? "1px solid rgba(0, 0, 0, 0.1)" : ""}
+        iconColor={change ? "black" : "white"}
       />
     </div>
   );

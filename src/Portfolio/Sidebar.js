@@ -37,29 +37,20 @@ const Sidebar = ({ myId }) => {
         <Link
           offset={-80}
           activeClass="active"
-          to="Service"
+          to="Services"
           smooth={true}
           duration={1000}
         >
-          <span>Service</span>
+          <span>Services</span>
         </Link>
         <Link
           offset={-80}
           activeClass="active"
-          to="Portfolio"
+          to="Projects"
           smooth={true}
           duration={1000}
         >
-          <span>Portfolio</span>
-        </Link>
-        <Link
-          offset={-80}
-          activeClass="active"
-          to="Resume"
-          smooth={true}
-          duration={1000}
-        >
-          <span>Resume</span>
+          <span>Projects</span>
         </Link>
         <Link
           offset={-80}

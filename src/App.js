@@ -1,22 +1,22 @@
 import React from "react";
 import Home from "./Portfolio/Home";
-import About from "./Portfolio/About";
+import Abou from "./Portfolio/Abou";
 import Structure from "./Portfolio/Structure/Structure";
-import Service from "./Portfolio/Service";
-import Portfolio from "./Portfolio/Portfolio";
-import Resume from "./Portfolio/Resume";
+import Service from "./Portfolio/Services/Service";
+import Projects from "./Portfolio/Projects";
 import Contact from "./Portfolio/Contact";
+import Footer from "./Portfolio/Footer";
 
 const App = () => {
   return (
     <div>
       <Structure />
       <Home />
-      <About />
+      <Abou />
       <Service />
-      <Portfolio />
-      <Resume />
+      <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };
